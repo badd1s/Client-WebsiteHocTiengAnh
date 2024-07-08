@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Home */
+.hide {
+    display: none;
+}
+
+.valid {
+    color: limegreen;
+    margin-left: 0.25rem;
+}
+.invalid {
+    color: red;
+    margin-left: 0.25rem;
+}
+.offscreen {
+    position: absolute;
+    left: -9999px;
+}
+.rotated-text {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}
+.val-box {
+    background-color: #f8f9fa;
+    transition: transform 0.2s;
+}
+.val-box:hover {
+    transform: scale(1.05);
+}
+.fs-4 {
+    font-size: 1.25rem;
+} 
+.val-text {
+    font-size: 0.9rem;
+}
+.list-item-1{
+    list-style-type: circle;
+}
+.list-item-2{
+    list-style-type: square;
+}
+.list-item-3{
+    list-style-type: lower-alpha;
+}
+.fixed-avatar,
+.fixed-avatar-2{
+    height: 50px;
+    width: 50px;
+}
+.fixed-avatar{
+    cursor: pointer;
+}
