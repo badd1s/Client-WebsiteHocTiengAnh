@@ -16,7 +16,7 @@ const PracticeGram = ({ val }) => {
     return (
         <>
             <div className="card my-3">
-                <Link reloadDocument to={`/listPracticeGram/${userId}/${val._id}`} className='card-header fs-5 fw-semibold text-primary link-underline link-underline-opacity-0 list-group-item-action list-group-item-primary' >{val.title}</Link>
+                <Link to={`/listPracticeGram/${userId}/${val._id}`} className='card-header fs-5 fw-semibold text-primary link-underline link-underline-opacity-0 list-group-item-action list-group-item-primary' >{val.title}</Link>
                 <div className="card-body">
                     <div className='d-flex row'>
                         <div className='col-6'>

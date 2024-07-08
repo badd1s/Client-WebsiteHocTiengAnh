@@ -86,7 +86,7 @@ const VocabularyPage = () => {
                         <>
                             <h2>Không tìm thấy chủ đề từ vựng nào</h2>
                             <p>
-                                <Link reloadDocument to='/listVocabulary'>Quay về trang Từ Vựng</Link>
+                                <Link to='/listVocabulary'>Quay về trang Từ Vựng</Link>
                             </p>
                         </>
                     )}

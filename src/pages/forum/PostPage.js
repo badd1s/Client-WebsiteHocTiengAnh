@@ -19,7 +19,6 @@ const PostPage = () => {
             const updatedList = post.filter(val => val._id !== id);
             setPost(updatedList);
             navigate('/homePost');
-            window.location.reload();
         } catch (err) {
             console.log(`Error: ${err.message}`);
         }
@@ -60,7 +59,7 @@ const PostPage = () => {
                                             {/* Chỉ người đăng mới được sửa và xoá */}
                                             {userId === authorId &&
                                                 <div className='d-flex justify-content-end'>
-                                                    <Link reloadDocument to={`/editPost/${posts._id}`}>
+                                                    <Link to={`/editPost/${posts._id}`}>
                                                         <button type='button' className='btn bg-info' >
                                                             Chỉnh sửa
                                                         </button>
@@ -84,7 +83,7 @@ const PostPage = () => {
                         <>
                             <h2>Không tìm thấy bài viết</h2>
                             <p>
-                                <Link reloadDocument to='/homePost'>Quay về Diễn Đàn</Link>
+                                <Link to='/homePost'>Quay về Diễn Đàn</Link>
                             </p>
                         </>
                     }

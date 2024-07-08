@@ -96,7 +96,7 @@ const PracticeGrammarAdmin = () => {
                                                         <td>{val.datetime} </td>
                                                         <td>
                                                             {/* Xem */}
-                                                            <Link reloadDocument to={`/listPracticeGram/${userId}/${val._id}`} className='btn btn-success my-1 mx-1 btn-sm'>
+                                                            <Link to={`/listPracticeGram/${userId}/${val._id}`} className='btn btn-success my-1 mx-1 btn-sm'>
                                                                 Xem
                                                             </Link>
 

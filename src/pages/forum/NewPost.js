@@ -34,7 +34,6 @@ const NewPost = () => {
             titleRef.current.value = '';
             bodyRef.current.value = '';
             navigate('/homePost');
-            window.location.reload();
         } catch (err) {
             console.log(`Error: ${err.message}`);
         }

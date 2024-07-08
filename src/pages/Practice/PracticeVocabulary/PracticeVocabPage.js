@@ -102,7 +102,7 @@ const PracticeVocabPage = () => {
             <div>
                 <h2>Không tìm thấy từ vựng</h2>
                 <p>
-                    <Link reloadDocument to='/listPracticeVocab'>Quay về</Link>
+                    <Link to='/listPracticeVocab'>Quay về</Link>
                 </p>
             </div>
         );

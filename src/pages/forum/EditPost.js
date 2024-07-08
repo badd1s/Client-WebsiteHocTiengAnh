@@ -77,7 +77,7 @@ const EditPost = () => {
                         <>
                             <h2>Không tìm thấy bài viết</h2>
                             <p>
-                                <Link reloadDocument to='/homePost'>Quay về</Link>
+                                <Link to='/homePost'>Quay về</Link>
                             </p>
                         </>
                     }

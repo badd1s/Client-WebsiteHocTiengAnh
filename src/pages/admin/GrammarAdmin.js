@@ -94,7 +94,7 @@ const GrammarAdmin = () => {
                                                     <td>{val.datetime} </td>
                                                     <td>
                                                         {/* Xem bài học */}
-                                                        <Link reloadDocument to={`/listGrammar/${val._id}`} className='btn btn-success my-1 mx-1 btn-sm'>
+                                                        <Link to={`/listGrammar/${val._id}`} className='btn btn-success my-1 mx-1 btn-sm'>
                                                             Xem
                                                         </Link>
 

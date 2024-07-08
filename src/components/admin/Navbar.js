@@ -23,7 +23,7 @@ const Navbar = () => {
                     <div className="collapse navbar-collapse" id="navbarNavDropdown">
                         <div className="navbar-nav mx-auto nav-tabs">
                             <Link
-                                reloadDocument
+
                                 className={`nav-link nav-item ${activeLink === '/admin' ? 'active' : ''}`}
                                 aria-current='page'
                                 to="/admin"
@@ -31,7 +31,7 @@ const Navbar = () => {
                                 Người Dùng
                             </Link>
                             <Link
-                                reloadDocument
+
                                 className={`nav-link nav-item ${activeLink === '/admin/vocabulary' ? 'active' : ''}`}
                                 aria-current='page'
                                 to="/admin/vocabulary"
@@ -39,7 +39,7 @@ const Navbar = () => {
                                 Từ Vựng và Ôn tập Từ Vựng
                             </Link>
                             <Link
-                                reloadDocument
+
                                 className={`nav-link nav-item ${activeLink === '/admin/grammar' ? 'active' : ''}`}
                                 aria-current='page'
                                 to="/admin/grammar"
@@ -47,7 +47,7 @@ const Navbar = () => {
                                 Ngữ Pháp
                             </Link>
                             <Link
-                                reloadDocument
+
                                 className={`nav-link nav-item ${activeLink === '/admin/listPracticeGrammar' ? 'active' : ''}`}
                                 aria-current='page'
                                 to="/admin/listPracticeGrammar"
@@ -55,7 +55,7 @@ const Navbar = () => {
                                 Ôn Tập Ngữ Pháp
                             </Link>
                             <Link
-                                reloadDocument
+
                                 className={`nav-link nav-item ${activeLink === '/admin/homePost' ? 'active' : ''}`}
                                 aria-current='page'
                                 to="/admin/homePost"

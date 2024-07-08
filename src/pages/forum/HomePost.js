@@ -26,7 +26,7 @@ const HomePost = () => {
                         </form>
                     </div>
                     <div className='col-md-2'>
-                        <Link reloadDocument className='btn btn-info fw-bold col-12 mb-3' to='/newPost'>Đăng bài mới</Link>
+                        <Link className='btn btn-info fw-bold col-12 mb-3' to='/newPost'>Đăng bài mới</Link>
                     </div>
                 </div>
                 <div>

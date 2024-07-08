@@ -123,7 +123,7 @@ const Login = () => {
                                 <button type="submit" className=" btn btn-primary">Đăng Nhập</button>
                                 <p className='py-5'>
                                     Bạn chưa có tài khoản ?
-                                    <Link reloadDocument to="/register" className='link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover'>Đăng Ký</Link>
+                                    <Link to="/register" className='link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover'>Đăng Ký</Link>
                                 </p>
                             </div>
 

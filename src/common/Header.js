@@ -34,7 +34,7 @@ const Header = () => {
                     data-bs-toggle="dropdown"
                 />
                 <div className="dropdown-menu bg-info-subtle">
-                    <Link reloadDocument to={`/profile/${userId}`} className="dropdown-item">
+                    <Link to={`/profile/${userId}`} className="dropdown-item">
                         Cập nhật thông tin
                     </Link>
                     <Link
@@ -50,7 +50,7 @@ const Header = () => {
     const guestLinks = (
         <>
             <Link
-                reloadDocument
+
                 to="/login"
                 className="btn btn-primary shadow-sm rounded-5 mx-1 "
                 type="button"
@@ -58,7 +58,7 @@ const Header = () => {
                 Đăng Nhập
             </Link>
             <Link
-                reloadDocument
+
                 to="/register"
                 className="btn btn-primary shadow-sm rounded-5 mx-1 "
                 type="button"
@@ -106,12 +106,12 @@ const Header = () => {
                                 id="navbarSupportedContent"
                             >
                                 <div className="navbar-nav mx-auto">
-                                    <Link reloadDocument to="/" className="nav-link nav-item">
+                                    <Link to="/" className="nav-link nav-item">
                                         TRANG CHỦ
                                     </Link>
                                     <div className="nav-item dropdown">
                                         <Link
-                                            reloadDocument
+
                                             className="nav-link dropdown-toggle"
                                             data-bs-toggle="dropdown"
                                             aria-expanded="false"
@@ -119,20 +119,20 @@ const Header = () => {
                                             HỌC TẬP
                                         </Link>
                                         <div className="dropdown-menu bg-primary-subtle">
-                                            <Link reloadDocument to="/alphabet" className="dropdown-item">
+                                            <Link to="/alphabet" className="dropdown-item">
                                                 BẢNG PHIÊN ÂM VÀ BẢNG CHỮ CÁI
                                             </Link>
-                                            <Link reloadDocument to="/listVocabulary" className="dropdown-item">
+                                            <Link to="/listVocabulary" className="dropdown-item">
                                                 TỪ VỰNG
                                             </Link>
-                                            <Link reloadDocument to="/listGrammar" className="dropdown-item">
+                                            <Link to="/listGrammar" className="dropdown-item">
                                                 NGỮ PHÁP
                                             </Link>
                                         </div>
                                     </div>
                                     <div className="nav-item dropdown">
                                         <Link
-                                            reloadDocument
+
                                             className="nav-link dropdown-toggle"
                                             data-bs-toggle="dropdown"
                                             aria-expanded="false"
@@ -140,15 +140,15 @@ const Header = () => {
                                             ÔN TẬP
                                         </Link>
                                         <div className="dropdown-menu bg-primary-subtle">
-                                            <Link reloadDocument to="/listPracticeVocab" className="dropdown-item">
+                                            <Link to="/listPracticeVocab" className="dropdown-item">
                                                 TỪ VỰNG
                                             </Link>
-                                            <Link reloadDocument to="/listPracticeGram" className="dropdown-item">
+                                            <Link to="/listPracticeGram" className="dropdown-item">
                                                 NGỮ PHÁP
                                             </Link>
                                         </div>
                                     </div>
-                                    <Link reloadDocument to="/homePost" className="nav-link nav-item ">
+                                    <Link to="/homePost" className="nav-link nav-item ">
                                         DIỄN ĐÀN
                                     </Link>
                                 </div>

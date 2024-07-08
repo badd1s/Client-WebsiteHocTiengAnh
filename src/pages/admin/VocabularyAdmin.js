@@ -93,7 +93,7 @@ const VocabularyAdmin = () => {
                                                         <td>{val.datetime} </td>
                                                         <td>
                                                             {/* Xem chủ đề */}
-                                                            <Link reloadDocument to={`/listVocabulary/${val._id}`} className='btn btn-success my-1 mx-1 btn-sm'>
+                                                            <Link to={`/listVocabulary/${val._id}`} className='btn btn-success my-1 mx-1 btn-sm'>
                                                                 Xem
                                                             </Link>
 
@@ -131,7 +131,7 @@ const VocabularyAdmin = () => {
                                                             </button>
 
                                                             {/* Xem bài ôn tập chủ đề */}
-                                                            <Link reloadDocument to={`/listPracticeVocab/${userId}/${val._id}`} className='btn btn-primary my-1 mx-1 btn-sm'>
+                                                            <Link to={`/listPracticeVocab/${userId}/${val._id}`} className='btn btn-primary my-1 mx-1 btn-sm'>
                                                                 Xem
                                                             </Link>
                                                         </td>

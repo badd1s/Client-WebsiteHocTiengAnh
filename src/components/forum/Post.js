@@ -16,7 +16,7 @@ const Post = ({ val }) => {
                         <p className='fw-bold'>{val.authorName}</p>
                     </div>
                     <div className='col-md-8'>
-                        <Link reloadDocument to={`/homePost/${val._id}`} className='text-decoration-none'>
+                        <Link to={`/homePost/${val._id}`} className='text-decoration-none'>
                             <h5 className='card-title text-primary'>{val.title}</h5>
                         </Link>
                         <p className="card-tex">

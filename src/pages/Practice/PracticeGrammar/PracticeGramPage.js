@@ -102,7 +102,7 @@ const PracticeGramPage = () => {
             <div>
                 <h2>Không tìm thấy bài tập ngữ pháp</h2>
                 <p>
-                    <Link reloadDocument to='/listPracticeGrammar'>Quay về</Link>
+                    <Link to='/listPracticeGrammar'>Quay về</Link>
                 </p>
             </div>
         );

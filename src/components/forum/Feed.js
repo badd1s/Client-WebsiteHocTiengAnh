@@ -3,7 +3,7 @@ import Post from './Post';
 import usePagination from '../../hooks/usePagination';
 
 const Feed = ({ post }) => {
-    const itemsPerPage = 10;
+    const itemsPerPage = 5;
     const {
         currentPage,
         totalPages,

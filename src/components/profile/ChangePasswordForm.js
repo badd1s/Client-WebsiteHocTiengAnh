@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { faCheck, faTimes, faInfoCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCheckCircle, faTimesCircle } from '@fortawesome/free-solid-svg-icons';
 const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%?=*&]).{8,}$/;
 
 const ChangePasswordForm = ({ axiosPrivate, userLogin }) => {
@@ -12,7 +13,8 @@ const ChangePasswordForm = ({ axiosPrivate, userLogin }) => {
     const [validMatch, setValidMatch] = useState(false);
     const [matchFocus, setMatchFocus] = useState(false);
     const [success, setSuccess] = useState(false);
-
+    const [success2, setSuccess2] = useState(null);
+    const [message, setMessage] = useState('');
     useEffect(() => {
         setValidPwd(PWD_REGEX.test(newPwd));
         setValidMatch(newPwd === matchPwd);
@@ -27,8 +29,14 @@ const ChangePasswordForm = ({ axiosPrivate, userLogin }) => {
         try {
             await axiosPrivate.put(`/changePwd`, JSON.stringify({ user: userLogin.username, oldPwd, newPwd }));
             setSuccess(true);
-            console.log('OK roi');
+            setSuccess2(true);
+            setMessage('Đổi Mật Khẩu Thành Công');
+            setTimeout(() => {
+                window.location.reload();
+            }, 1000);
         } catch (err) {
+            setSuccess2(false);
+            setMessage('Đổi Mật Khẩu Thất Bại');
             console.log(`Error: ${err.message}`);
         }
     };
@@ -111,7 +119,31 @@ const ChangePasswordForm = ({ axiosPrivate, userLogin }) => {
                     Xác Nhận
                 </button>
             </div>
+            {/* Modal thông báo thành công hoặc thất bại */}
+            <div className={`modal fade ${success2 !== null ? 'show d-block' : ''}`} tabIndex="-1" aria-labelledby="statusModalLabel" aria-hidden={success2 === null}>
+                <div className="modal-dialog modal-dialog-centered">
+                    <div className="modal-content">
+                        <div className="modal-header">
+                            {success2 ? (
+                                <FontAwesomeIcon icon={faCheckCircle} className="me-2 text-success" size="2x" />
+                            ) : (
+                                <FontAwesomeIcon icon={faTimesCircle} className="me-2 text-danger" size="2x" />
+                            )}
+                            <h5 className="modal-title" id="statusModalLabel">Thông báo</h5>
+                            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close" onClick={() => {
+                                setMessage('');
+                                setSuccess2(null);
+                            }}></button>
+                        </div>
+                        <div className="modal-body">
+                            {message}
+                        </div>
+                    </div>
+                </div>
+            </div>
         </form>
+
+
     );
 };
 

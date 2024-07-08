@@ -78,7 +78,7 @@ const ForumAdmin = () => {
                                                     <td>{val.datetime} </td>
                                                     <td>
                                                         {/* Xem */}
-                                                        <Link reloadDocument to={`/homePost/${val._id}`} className='btn btn-success my-1 mx-1 btn-sm'>
+                                                        <Link to={`/homePost/${val._id}`} className='btn btn-success my-1 mx-1 btn-sm'>
                                                             Xem
                                                         </Link>
 

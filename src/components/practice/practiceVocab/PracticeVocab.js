@@ -16,7 +16,7 @@ const PracticeVocab = ({ val }) => {
     return (
         <>
             <div className="card my-3">
-                <Link reloadDocument to={`/listPracticeVocab/${userId}/${val._id}`} className='card-header fs-5 fw-semibold text-primary link-underline link-underline-opacity-0 list-group-item-action list-group-item-primary' >{val.title}</Link>
+                <Link to={`/listPracticeVocab/${userId}/${val._id}`} className='card-header fs-5 fw-semibold text-primary link-underline link-underline-opacity-0 list-group-item-action list-group-item-primary' >{val.title}</Link>
                 <div className="card-body">
                     <div className='d-flex row'>
                         <div className='col-6'>

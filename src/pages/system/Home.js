@@ -42,7 +42,7 @@ const Home = () => {
                                     từ vựng và ngữ pháp cơ bản trong tiếng Anh.
                                 </p>
                                 <Link
-                                    reloadDocument
+
                                     to="/alphabet"
 
                                     className="text-primary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-center fs-5 d-block mt-3"
@@ -50,14 +50,14 @@ const Home = () => {
                                     Bảng chữ cái/ Bảng phiên âm
                                 </Link>
                                 <Link
-                                    reloadDocument
+
                                     to="/listVocabulary"
                                     className="text-primary text-center fs-5 link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover d-block mt-3"
                                 >
                                     Từ vựng
                                 </Link>
                                 <Link
-                                    reloadDocument
+
                                     to="/listGrammar"
                                     className="text-primary text-center fs-5 link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover d-block mt-3"
                                 >
@@ -86,14 +86,14 @@ const Home = () => {
                                     và ngữ pháp đã được học.
                                 </p>
                                 <Link
-                                    reloadDocument
+
                                     to="/listPracticeVocab"
                                     className="text-primary text-center fs-5 link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover d-block mt-3"
                                 >
                                     Ôn tập từ vựng
                                 </Link>
                                 <Link
-                                    reloadDocument
+
                                     to="/listPracticeGram"
                                     className="text-primary text-center fs-5 link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover d-block mt-3"
                                 >
@@ -122,7 +122,7 @@ const Home = () => {
                                     đặt câu hỏi và trao đổi kiến thức với cộng đồng.
                                 </p>
                                 <Link
-                                    reloadDocument
+
                                     to="/homePost"
                                     className="text-primary text-center fs-5 link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover d-block mt-3"
                                 >

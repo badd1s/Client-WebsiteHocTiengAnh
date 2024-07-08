@@ -51,7 +51,7 @@ const Register = () => {
             return;
         }
         try {
-            const response = await axios.post(REGISTER_URL,
+            await axios.post(REGISTER_URL,
                 JSON.stringify({ user, pwd }),
                 {
                     headers: { 'Content-Type': 'application/json' },
@@ -167,7 +167,7 @@ const Register = () => {
                             <div className='text-center'>
                                 <p className='py-1'>
                                     Đã có tài khoản ?
-                                    <Link reloadDocument to="/login" className='link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover'> Đăng Nhập</Link>
+                                    <Link to="/login" className='link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover'> Đăng Nhập</Link>
                                 </p>
                             </div>
                         </form>

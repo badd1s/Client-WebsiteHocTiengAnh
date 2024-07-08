@@ -256,7 +256,7 @@ const GrammarPage = () => {
                         <>
                             <h2>Không tìm thấy bài ngữ pháp</h2>
                             <p>
-                                <Link reloadDocument to='/listGrammar'>Quay về Danh sách Ngữ Pháp</Link>
+                                <Link to='/listGrammar'>Quay về Danh sách Ngữ Pháp</Link>
                             </p>
                         </>
                     }
