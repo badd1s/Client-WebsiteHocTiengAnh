@@ -13,7 +13,7 @@ const Navbar = () => {
         <>
             <nav className="navbar navbar-expand-lg bg-info-subtle shadow-sm rounded">
                 <div className="container-fluid">
-                    <Link className="text-primary display-6 fw-medium navbar-brand" to="/admin">Quản Lý</Link>
+                    <p>Quản Lý</p>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
