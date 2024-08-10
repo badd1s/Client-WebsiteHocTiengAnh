@@ -71,10 +71,8 @@ const Header = () => {
     const handleLearnEnglishClick = () => {
         if (userRole && userRole.Admin === ROLES.Admin) {
             navigate("/admin");
-            window.location.reload();
         } else {
             navigate("/");
-            window.location.reload();
         }
 
     };
