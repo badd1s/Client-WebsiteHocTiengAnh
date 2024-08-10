@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import useLocalStorage from './useLocalStorage';
 
-const BASE_URL = "https://be-english-web.onrender.com/3500";   //'http://localhost:3500';
+const BASE_URL = "https://be-english-web.onrender.com/";   //'http://localhost:3500';
 
 const useAxiosFetchPrivate = (dataUrl) => {
     const [data, setData] = useState([]);
