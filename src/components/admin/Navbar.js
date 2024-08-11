@@ -41,6 +41,7 @@ const Navbar = () => {
                 }`}
                 aria-current="page"
                 to="/admin"
+                reloadDocument
               >
                 Người Dùng
               </Link>
