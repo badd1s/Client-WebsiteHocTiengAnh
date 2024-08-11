@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import useLogout from "../../hooks/useLogout";
-import AuthContext from "../../context/AuthContext";
-import ROLES from "../../config/Roles";
+import useLogout from "../hooks/useLogout";
+import AuthContext from "../context/AuthContext";
+import ROLES from "../config/Roles";
 const Header = () => {
   // Đăng xuất
   const navigate = useNavigate();
