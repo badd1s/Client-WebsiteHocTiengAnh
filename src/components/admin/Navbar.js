@@ -16,6 +16,7 @@ const Navbar = () => {
       <nav className="navbar navbar-expand-lg bg-info-subtle shadow-sm rounded">
         <div className="container-fluid">
           <Link
+            reloadDocument
             className="text-primary display-6 fw-medium navbar-brand"
             to="/admin"
           >
